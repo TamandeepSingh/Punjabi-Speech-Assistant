@@ -1,0 +1,18 @@
+{
+  "name": "Personal Asistant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Tamandeep Singh, Shaminder Singh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "mongoose": "^4.11.11"
+  }
+}
