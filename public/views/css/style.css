@@ -1,0 +1,14 @@
+#canvas {
+  border: 2px;
+}
+body {
+  background: #F7F7F7;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+h2, h3 { margin-top:0; }
+form { margin-top: 15px; }
+form > input { margin-right: 15px; }
+#results { float:right; margin:20px; padding:20px; border:1px solid; background:#ccc; }

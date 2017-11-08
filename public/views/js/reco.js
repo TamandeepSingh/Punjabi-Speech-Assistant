@@ -16,11 +16,12 @@ function startReco(){
 }
 
 sira.addCommands([
+    ////// Fb vala........................................
     {
         indexes: ["खोलो Facebook"],
         action: function(i){
             console.log("खोलो Facebook");
-            var eg = "ਖਲੋ Facebook";
+            var eg = "ਖੋਲ ਦਿਤਾ ਜੀ ||";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://www.facebook.com/");
@@ -30,20 +31,94 @@ sira.addCommands([
         indexes: ["Facebook खोलो"],
         action: function(i){
             console.log("Facebook खोल");
-            var eg = "Facebook ਖਲੋ";
+            var eg = "ਖੋਲਰਿਆ ਜੀ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://www.facebook.com/");
         }
     },
     {
-        indexes: ["Facebook खोलो"],
+        indexes: ["खोल Facebook"],
         action: function(i){
             console.log("Facebook खोल");
-            var eg = "Facebook ਖਲੋ";
+            var eg = "ਖੋਲਰਿਆ ਜੀ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://www.facebook.com/",'_blank');
+        }
+    },
+    {
+        indexes: ["Facebook खोल"],
+        action: function(i){
+            console.log("Facebook खोल");
+            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var res = document.getElementById("result");
+            res.innerHTML = eg;
+            window.open("https://www.facebook.com/",'_blank');
+        }
+    },
+    //  For camera photo.........................
+    {
+        indexes: ["कैमरा खोलो"],
+        action: function(i){
+            console.log("कैमरा खोलो");
+            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var res = document.getElementById("result");
+            res.innerHTML = eg;
+            opencam();
+            exec();
+        }
+    },
+    {
+        indexes: ["क्लिक करो"],
+        action: function(i){
+            console.log("क्लिक करो");
+            var eg = "ਜੀ";
+            var res = document.getElementById("result");
+            res.innerHTML = eg;
+            take_snapshot();
+        }
+    },
+
+    // For Whatsapp ................
+    {
+        indexes: ["खोलो WhatsApp"],
+        action: function(i){
+            console.log("खोलो WhatsApp");
+            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var res = document.getElementById("result");
+            res.innerHTML = eg;
+            window.open("https://web.whatsapp.com/");
+        }
+    },
+    {
+        indexes: ["WhatsApp खोलो"],
+        action: function(i){
+            console.log("WhatsApp खोल");
+            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var res = document.getElementById("result");
+            res.innerHTML = eg;
+            window.open("https://web.whatsapp.com/");
+        }
+    },
+    {
+        indexes: ["खोल WhatsApp"],
+        action: function(i){
+            console.log("खोल WhatsApp");
+            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var res = document.getElementById("result");
+            res.innerHTML = eg;
+            window.open("https://web.whatsapp.com/",'_blank');
+        }
+    },
+    {
+        indexes: ["WhatsApp खोल"],
+        action: function(i){
+            console.log("WhatsApp खोल");
+            var eg = "ਖੋਲਰਿਆ ਜੀੋ";
+            var res = document.getElementById("result");
+            res.innerHTML = eg;
+            window.open("https://web.whatsapp.com/",'_blank');
         }
     }
 ]);
@@ -55,3 +130,22 @@ function stopReco(){
     res.innerHTML = "";
     sira.fatality();
 }
+/*
+Webcam.set({
+  width: 320,
+  height: 240,
+  image_format: 'jpeg',
+  jpeg_quality: 90
+});
+Webcam.attach( '#my_camera' );
+
+function take_snapshot() {
+  // take snapshot and get image data
+  Webcam.snap( function(data_uri) {
+    // display results in page
+    document.getElementById('results').innerHTML =
+      '<h2>Here is your image:</h2>' +
+      '<img src="'+data_uri+'"/>';
+  } );
+}
+*/
