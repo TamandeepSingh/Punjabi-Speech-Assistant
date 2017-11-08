@@ -15,13 +15,15 @@ function startReco(){
 });
 }
 
+var d = new Date();
+
 sira.addCommands([
     ////// Fb vala........................................
     {
         indexes: ["खोलो Facebook"],
         action: function(i){
             console.log("खोलो Facebook");
-            var eg = "ਖੋਲ ਦਿਤਾ ਜੀ ||";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:-ਖੋਲ ਦਿਤਾ ਜੀ ||";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://www.facebook.com/");
@@ -31,7 +33,7 @@ sira.addCommands([
         indexes: ["Facebook खोलो"],
         action: function(i){
             console.log("Facebook खोल");
-            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:-ਖੋਲਰਿਆ ਜੀ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://www.facebook.com/");
@@ -41,7 +43,7 @@ sira.addCommands([
         indexes: ["खोल Facebook"],
         action: function(i){
             console.log("Facebook खोल");
-            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:-ਖੋਲਰਿਆ ਜੀ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://www.facebook.com/",'_blank');
@@ -51,7 +53,7 @@ sira.addCommands([
         indexes: ["Facebook खोल"],
         action: function(i){
             console.log("Facebook खोल");
-            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:-ਖੋਲਰਿਆ ਜੀ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://www.facebook.com/",'_blank');
@@ -62,7 +64,7 @@ sira.addCommands([
         indexes: ["कैमरा खोलो"],
         action: function(i){
             console.log("कैमरा खोलो");
-            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:-ਖੋਲਰਿਆ ਜੀ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             opencam();
@@ -73,7 +75,7 @@ sira.addCommands([
         indexes: ["क्लिक करो"],
         action: function(i){
             console.log("क्लिक करो");
-            var eg = "ਜੀ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:-ਜੀ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             take_snapshot();
@@ -85,7 +87,7 @@ sira.addCommands([
         indexes: ["खोलो WhatsApp"],
         action: function(i){
             console.log("खोलो WhatsApp");
-            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:-ਖੋਲਰਿਆ ਜੀ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://web.whatsapp.com/");
@@ -95,7 +97,7 @@ sira.addCommands([
         indexes: ["WhatsApp खोलो"],
         action: function(i){
             console.log("WhatsApp खोल");
-            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:-ਖੋਲਰਿਆ ਜੀ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://web.whatsapp.com/");
@@ -105,7 +107,7 @@ sira.addCommands([
         indexes: ["खोल WhatsApp"],
         action: function(i){
             console.log("खोल WhatsApp");
-            var eg = "ਖੋਲਰਿਆ ਜੀ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:-ਖੋਲਰਿਆ ਜੀ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://web.whatsapp.com/",'_blank');
@@ -115,7 +117,7 @@ sira.addCommands([
         indexes: ["WhatsApp खोल"],
         action: function(i){
             console.log("WhatsApp खोल");
-            var eg = "ਖੋਲਰਿਆ ਜੀੋ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:-ਖੋਲਰਿਆ ਜੀੋ";
             var res = document.getElementById("result");
             res.innerHTML = eg;
             window.open("https://web.whatsapp.com/",'_blank');
