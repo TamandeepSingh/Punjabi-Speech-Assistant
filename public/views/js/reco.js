@@ -19,30 +19,33 @@ function startReco() {
 sira.addCommands([{
         indexes: ["खोलो Facebook"],
         action: function(i) {
+            var d = new Date();
             console.log("खोलो Facebook");
-            var eg = "ਖਲੋ Facebook";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:- ਖਲੋ Facebook";
             var res = document.getElementById("result");
-            res.innerHTML = eg;
+            res.innerHTML += eg;
             window.open("https://www.facebook.com/");
         }
     },
     {
         indexes: ["Facebook खोलो"],
         action: function(i) {
+            var d = new Date();
             console.log("Facebook खोल");
-            var eg = "Facebook ਖਲੋ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:- Facebook ਖਲੋ";
             var res = document.getElementById("result");
-            res.innerHTML = eg;
+            res.innerHTML += eg;
             window.open("https://www.facebook.com/");
         }
     },
     {
         indexes: ["Facebook खोलो"],
         action: function(i) {
+            var d = new Date();
             console.log("Facebook खोल");
-            var eg = "Facebook ਖਲੋ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:- Facebook ਖਲੋ";
             var res = document.getElementById("result");
-            res.innerHTML = eg;
+            res.innerHTML += eg;
             window.open("https://www.facebook.com/", '_blank');
         }
     },
@@ -50,10 +53,11 @@ sira.addCommands([{
     {
         indexes: ["Facebook खोल"],
         action: function(i) {
+            var d = new Date();
             console.log("Facebook खोल");
-            var eg = "Facebook ਖਲੋ";
+            var eg = "<br/><strong>" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "</strong>:- Facebook ਖਲੋ";
             var res = document.getElementById("result");
-            res.innerHTML = eg;
+            res.innerHTML += eg;
             window.open("https://www.facebook.com/", '_blank');
         }
     }
@@ -64,6 +68,6 @@ function stopReco() {
     var picGif = document.getElementById("gif");
     picGif.innerHTML = "";
     var res = document.getElementById("result");
-    res.innerHTML = "";
+    //res.innerHTML = "";
     sira.fatality();
 }
