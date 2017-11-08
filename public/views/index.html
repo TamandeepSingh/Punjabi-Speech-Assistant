@@ -5,16 +5,17 @@
     <meta charset="utf-8" />
     <script src="js/artyom.window.js" ></script>
     <script type="text/javascript" src="js/webcam.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
 
   <body>
+    <div id="backg">
     <h1>ਪਿੰਜਾਬੀ ਸਿਰਾ </h1>
-    <button onclick="startReco()" > ਬੋਲੋ  </button>
-    <button onclick="stopReco()" > ਰੁਕੋ  </button>
+    <div id="gif" style="height:50px"></div>
+    <button class="but" id="Speak" onclick="startReco()">ਬੋਲੋ</button>
+    <button class="but" id="Stop" onclick="stopReco()"> ਰੁਕੋ</button>
     <div id="commands-list" ></div>
-    <div id="gif"></div>
-    <div id="result"></div>
+    <div id="result" >Commands:</div>
     <div id="video-container">
       <video id="camera-stream" width="500" autoplay></video>
     </div>
@@ -64,5 +65,6 @@
 		}
 	</script>
   <script src="js/reco.js" ></script>
+  </div>
   </body>
 </html>
