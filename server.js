@@ -1,7 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var morgan = require("morgan");
-var config = require("./config/config.js");
 
 var app = express()
 
@@ -24,5 +23,9 @@ app.use(morgan("dev"));
 app.use(express.static(__dirname + '/public/views'));
 
 app.get('', function(req,res){
-	res.sendFile(__dirname + '/public/views/index.html');
+	res.sendFile(__dirname + 'index.html');
+});
+
+app.get('/music', function(req,res){
+	res.sendFile(__dirname + 'music.html');
 });
