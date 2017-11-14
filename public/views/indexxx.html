@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>index</title>
+    <meta charset="utf-8" />
+    <script src="js/artyom.window.js"></script>
+    <script type="text/javascript" src="js/webcam.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body background="backg.jpg">
+    <div id="backg">
+        <h1 id="title"> Sira - ਪੰਜਾਬੀ Voice Assistant </h1>
+        <div id="gif" style="height:50px"></div>
+        <button class="but" id="Speak" onclick="startReco()">Speak</button>
+        <button class="but" id="Stop" onclick="stopReco()">Stop</button>
+        <div id="commands-list"></div>
+        <div id="result">Commands:</div>
+        <div id="video-container">
+            <video id="camera-stream" hidden width="500" autoplay></video>
+        </div>
+        <div id="results"></div>
+
+        <h1 id="location"></h1>
+
+        <div id="my_camera"></div>
+
+        <!-- First, include the Webcam.js JavaScript Library -->
+
+        <!-- Configure a few settings and attach camera -->
+        <script language="JavaScript">
+            function opencam() {
+                var strin = "ਤੁਹਾਡੀ ਖਿੱਚੀ ਫੋਟੋ ਇਥੇ ਆਵੇਗੀ ਜੀ ||";
+                var iopen = document.getElementById("results");
+                iopen.innerHTML = strin;
+                var loc = document.getElementById("location");
+                loc.innerHTML = "ਤੁਹਾਡਾ ਕੈਮਰਾ || ਮੁਸ੍ਕੁਰਾਓ!";
+            }
+
+            function exec() {
+                Webcam.set({
+                    width: 320,
+                    height: 240,
+                    image_format: 'jpeg',
+                    jpeg_quality: 90
+                });
+                Webcam.attach('#my_camera');
+            }
+        </script>
+
+        <!-- A button for taking snaps
+	<form>
+		<input type=button value="Take Snapshot" onClick="take_snapshot()">
+	</form>
+
+	 Code to handle taking the snapshot and displaying it locally -->
+        <script language="JavaScript">
+            function take_snapshot() {
+                // take snapshot and get image data
+                Webcam.snap(function(data_uri) {
+                    // display results in page
+                    document.getElementById('results').innerHTML =
+                        '<img src="' + data_uri + '"/>' + '<h2> ਤੁਹਾਡੀ ਖਿੱਚੀ ਫੋਟੋ || </h2>';
+                });
+            }
+        </script>
+        <script src="js/reco.js"></script>
+    </div>
+</body>
+
+</html>
